@@ -5,7 +5,7 @@
 #
 # docker push charlesdias/yocto_imx6ull_bsp6 --all-tags
 
-FROM ubuntu:22.04
+FROM ubuntu:18.04
 
 LABEL maintainer="Charles Dias <charlesdias.cd@outlook.com>"
 
@@ -18,14 +18,16 @@ RUN apt-get update && apt-get -y upgrade && \
     apt-get -y install gawk wget git diffstat unzip texinfo gcc \
     build-essential chrpath socat cpio python3 python3-pip python3-pexpect \
     xz-utils debianutils iputils-ping python3-git python3-jinja2 \
-    libegl1-mesa libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev \
-    zstd liblz4-tool curl python3-distutils \
-    screen tmux bc libncurses5-dev lzop perl libssl-dev bison flex libgmp3-dev libmpc-dev \
-    locales locales-all ca-certificates python-is-python3
+    libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev \
+    zstd liblz4-tool \
+    curl qemu bison ca-certificates \
+    ccache check flex git-core gperf lcov libncurses-dev libusb-1.0-0-dev \
+    make ninja-build zip python3-distutils gcc-multilib vim \
+    rsync bc tmux git-lfs parted libgmp3-dev libmpc-dev
 
 # Set up locales
-# RUN apt-get -y install locales apt-utils sudo && dpkg-reconfigure locales && \
-#     locale-gen en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 
+RUN apt-get -y install locales locales-all apt-utils sudo && dpkg-reconfigure locales && \
+    locale-gen en_US.UTF-8 && update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8 
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
