@@ -18,7 +18,7 @@ RUN apt-get update && apt-get -y upgrade && \
     apt-get -y install gawk wget git diffstat unzip texinfo gcc \
     build-essential chrpath socat cpio python3 python3-pip python3-pexpect \
     xz-utils debianutils iputils-ping python3-git python3-jinja2 \
-    libegl1-mesa libsdl1.2-dev pylint3 xterm python3-subunit mesa-common-dev \
+    libegl1-mesa libsdl1.2-dev pylint xterm python3-subunit mesa-common-dev \
     zstd liblz4-tool \
     curl qemu bison ca-certificates \
     ccache check flex git-core gperf lcov libncurses-dev libusb-1.0-0-dev \
