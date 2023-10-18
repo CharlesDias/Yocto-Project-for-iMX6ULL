@@ -23,7 +23,7 @@ RUN apt-get update && apt-get -y upgrade && \
     curl qemu bison ca-certificates \
     ccache check flex git-core gperf lcov libncurses-dev libusb-1.0-0-dev \
     make ninja-build zip python3-distutils gcc-multilib vim \
-    rsync bc tmux git-lfs parted libgmp3-dev libmpc-dev
+    rsync bc tmux git-lfs parted libgmp3-dev libmpc-dev tree
 
 # Set up locales
 RUN apt-get -y install locales locales-all apt-utils sudo && dpkg-reconfigure locales && \
