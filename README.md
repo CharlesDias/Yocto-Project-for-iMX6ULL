@@ -12,6 +12,10 @@ The following software and hardware were used to validate existing code in this 
 * [Toradex Aster V1.1B board](https://www.toradex.com/products/carrier-boards/aster-carrier-board).
 * [Toradex Resistive Touch Display 7" Parallel](https://www.toradex.com/accessories/resistive-touch-display).
 
+## GitHub repository for meta-article layer
+
+* [meta-layer](https://github.com/CharlesDias/Yocto-meta-article)
+
 ## Tutorial on LinkedIn
 
 * [Yocto Project for iMX6ULL Part 0: Concepts, Setting up, and Building.](https://www.linkedin.com/pulse/yocto-project-imx6ull-part-0-concepts-setting-up-charles-dias-m-sc--jiqdf)
