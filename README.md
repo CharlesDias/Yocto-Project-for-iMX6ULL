@@ -14,7 +14,7 @@ The following software and hardware were used to validate existing code in this 
 
 ## GitHub repository for meta-article layer
 
-* [meta-layer](https://github.com/CharlesDias/Yocto-meta-article)
+* [meta-article layer.](https://github.com/CharlesDias/meta-article)
 
 ## Tutorial on LinkedIn
 
